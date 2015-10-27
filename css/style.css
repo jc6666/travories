@@ -1,0 +1,124 @@
+/*div {
+	border: 1px red solid;
+}*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	color: #545365 !important;
+}
+
+.logo {
+	height: 12vh;
+	padding-top: 2vh;
+	padding-bottom: 12vh;
+}
+
+.top {
+	height: 9h;
+	margin: 0;
+	padding: 0 0 1px 0;
+}
+
+.greeting p {
+	height: 8vh;
+	font-size: .8em;
+	display: table-cell;
+    vertical-align: bottom;
+}
+
+.user {
+	color: #eb6619;
+}
+
+.search {
+	height: 12vh;
+	vertical-align: center;
+	background-color: #efefef;
+	padding-top: 2.8vh;
+}
+
+form {
+	height: 12vh;
+	width: 80vw;
+	padding-left: 10vw;
+}
+
+.submit {
+	background-color: #81818b;
+	border-radius: 10px 0 0 10px;
+	font-size: .8em;
+	color: #545365;
+	position: absolute;
+	height: 1em;
+	width: 10vw;
+	width: 20px !important;
+	margin: 3px;
+}
+
+input[type=text] {
+	height: 3em;
+	border: 3px #545365 solid;
+	border-radius: 15px;
+	background-color: #c6c6c6;
+	font-size: .8em;
+	padding-left: 20vw;
+}
+
+.mapa-small {
+	height: 60vh;
+	background-image: url(../img/mapasmall.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 4vh;
+	padding: 0;
+}
+
+.page {
+	border: 3px #545365 solid;
+	border-radius: 15px;
+	background-color: #efefef;
+	padding: 0;
+	margin: -2px;
+}
+
+.page-title {
+	height: 8vh;
+	font-weight: 700;
+	font-size: 1.2em;
+	display:
+	  -webkit-box;
+	  -webkit-box-pack: inherit;
+	  -webkit-box-align:center;
+	margin: 0;
+}
+
+.social {
+	background-color: #efefef;
+	color: #545365;
+	padding: 6vh 0 4vh 0;
+	margin: 4vh 0 8vh 0;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+.hr {
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+hr {
+	width: 25vw;
+	margin-left: 33vw;
+}
+
+.social-icons {
+	font-size: 2em;
+}
+
+.copyright {
+	font-size: .8em;
+	color: #545365;
+}
