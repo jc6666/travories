@@ -1,6 +1,6 @@
-/* div {
+ div {
 	border: 1px red solid;
-} */
+} 
 
 body {
   font-family: 'CaviarDreams', Fallback, sans-serif;
@@ -17,7 +17,7 @@ a {
 }
 
 .top {
-	height: 9h;
+	height: 11vh;
 	margin: 0;
 	padding: 0 0 1px 0;
 }
@@ -245,13 +245,13 @@ hr {
 	border-bottom: 2px #c6c6c6 solid;
 }
 
-.profile {
+.amici-profile {
 	height: 8vh;
 	padding: 0;
 	margin: 2vh 0 1vh 0;
 }
 
-.profile-pic {
+.amici-profile-pic {
 	height: 8vh;
 	margin: 0;
 	padding: 0;
@@ -261,7 +261,7 @@ hr {
 	background-repeat: no-repeat;
 }
 
-.username {
+.amici-username {
 	height: 8vh;
 	font-size: .8em;
 	display: table;
@@ -269,7 +269,7 @@ hr {
     color: #525463;
 }
 
-.username p {
+.amici-username p {
 	display: table-cell;
 	vertical-align: bottom;
 }
@@ -288,4 +288,52 @@ hr {
 	display: table-cell;
     vertical-align: bottom;
     color: #525463
+}
+
+/*MEDIUM STYLES*/
+
+.logo-m {
+	height: 12vh;
+	padding-top: 3vh;
+}
+
+.username {
+	height: 12vh;
+	padding: 0;
+	margin: 0;
+}
+
+.profile-pic {
+	height: 12vh;
+	padding: 0;
+	padding-top: 1vh;
+	padding-left: 1px;
+}
+
+.greeting-m {
+	height: 12vh;
+	padding: 0;
+	margin: 0;
+	height: 12vh;
+	display: table-cell;
+    vertical-align: bottom;
+}
+
+.greeting-m p {
+	height: 9vh;
+	font-size: 1.3em;
+	display: table-cell;
+    vertical-align: bottom;
+}
+
+.page-m {
+	border: 3px #525463 solid;
+	border-radius: 15px;
+	background-color: #efefef;
+	padding: 0;
+	margin: 2px;
+}
+
+.end {
+	
 }
