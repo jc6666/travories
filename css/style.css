@@ -1,6 +1,6 @@
-/*div {
+/* div {
 	border: 1px red solid;
-}*/
+} */
 
 body {
   font-family: 'CaviarDreams', Fallback, sans-serif;
@@ -82,7 +82,7 @@ input[type=text] {
 	border-radius: 15px;
 	background-color: #efefef;
 	padding: 0;
-	margin: -2px;
+	margin: 2px;
 }
 
 .page-title {
@@ -120,4 +120,172 @@ hr {
 .copyright {
 	font-size: .8em;
 	color: #525463;
+}
+
+.viaggi {
+	background-color: #FFFFFF;
+	margin: 0;
+	padding:0;
+	padding-bottom: 1vh;
+	margin-bottom: 1.5vh;
+	border-bottom: 2px #c6c6c6 solid;
+}
+
+.viaggi-foto {
+	padding: 2vh 0 0 0;
+}
+
+.viaggi-info {
+	height: 8vh;
+	font-size: .8em;
+	margin: 1vh 0 0 0;
+	padding: 0;
+}
+
+.toucan {
+	height: 8vh;
+	margin: 0 0 0 1.5vh;
+	padding: 0;
+	background-image: url(../img/toucan.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.content {
+	height: 4vh;
+	margin: 0 -1.5vh 0 0;
+	padding: 0;
+}
+
+.guarda-viaggi {
+	margin:  0;
+	padding: 0;
+}
+
+.guarda-viaggi p {
+	font-size: .9em;
+	display: table-cell;
+    vertical-align: bottom;
+    color: #525463
+}
+
+.hr2 {
+	margin: 0;
+	padding: 0;
+	height: 4px;
+	background-image: url(../img/hr.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.schedule {
+	height: 4vh;
+	margin: 0;
+	padding: 0;
+}
+
+.schedule p {
+	font-size: .9em;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+.viaggi-social {
+	height: 5vh;
+    margin: -13.5px 13.5px 0px 19px;
+    padding: 0;
+    font-size: 1.4em;
+    color: #525463;
+    border: 2px #c6c6c6 solid;
+}
+
+.viaggi-location {
+	height: 8vh;
+}
+
+.user-location {
+	height: 8vh;
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/user-location.svg);
+	background-size: 110%;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.text-location {
+	margin:  0;
+	padding: 0;
+	display: inline-flex;
+	font-size: .8em;
+	display: table-cell;
+	vertical-align: bottom;
+	padding-top: 2vh;
+}
+
+.text-location p {
+	font-size: .8em;
+	margin: 0;
+	padding: 0;
+}
+
+.pais, .ciudad {
+	padding: 0;
+}
+
+.amici {
+	background-color: #FFFFFF;
+	margin: 0;
+	padding:0;
+	padding-bottom: 1vh;
+	margin-bottom: 1.5vh;
+	border-bottom: 2px #c6c6c6 solid;
+}
+
+.profile {
+	height: 8vh;
+	padding: 0;
+	margin: 2vh 0 1vh 0;
+}
+
+.profile-pic {
+	height: 8vh;
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/profileironman.png);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.username {
+	height: 8vh;
+	font-size: .8em;
+	display: table;
+    vertical-align: bottom;
+    color: #525463;
+}
+
+.username p {
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+.amici-foto {
+	padding: 0;
+}
+
+.guarda-profilo {
+	margin:  0;
+	padding: 0;
+}
+
+.guarda-profilo p {
+	font-size: .9em;
+	display: table-cell;
+    vertical-align: bottom;
+    color: #525463
 }
