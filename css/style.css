@@ -1,9 +1,31 @@
- div {
+/* div {
 	border: 1px red solid;
-} 
+} */
+
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('../fonts/CaviarDreams-webfont.eot');
+    src: url('../fonts/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CaviarDreams-webfont.woff') format('woff'),
+         url('../fonts/CaviarDreams-webfont.ttf') format('truetype'),
+         url('../fonts/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caviar_dreamsbold';
+    src: url('../fonts/Caviar_Dreams_Bold-webfont.eot');
+    src: url('../fonts/Caviar_Dreams_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Caviar_Dreams_Bold-webfont.woff') format('woff'),
+         url('../fonts/Caviar_Dreams_Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Caviar_Dreams_Bold-webfont.svg#caviar_dreamsbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
-  font-family: 'CaviarDreams', Fallback, sans-serif;
+  font-family: 'caviar_dreamsregular', sans-serif;
 }
 
 a {
@@ -23,6 +45,7 @@ a {
 }
 
 .greeting p {
+	font-family: 'caviar_dreamsbold';
 	height: 8vh;
 	font-size: .8em;
 	display: table-cell;
@@ -68,6 +91,54 @@ input[type=text] {
 	padding-left: 20vw;
 }
 
+.over-map {
+	padding: 0;
+    transform: translatey(12vh);
+    height: 72vh;
+    position: absolute;
+    z-index: 9;
+}
+
+.float-button {
+	padding: 0;
+	margin: 0;
+}
+
+.side-bar {
+	height: 8vh;
+	padding: 0;
+	margin: 0;
+	transform: rotate(270deg) translate(-28vh,62vw); 
+	position: absolute;
+	z-index: 10;
+}
+
+.chat {
+	padding: 0;
+	padding-top: 3px;
+	margin: 0;
+	transform: rotate(90deg);
+}
+
+.side-page {
+	border: 3px #525463 solid;
+	border-radius: 15px;
+	background-color: #efefef;
+	padding: 0;
+	margin: 0 8px 0 0;
+}
+
+.side-page-title {
+	height: 6.8vh;
+	font-size: 1.2em;
+	display:
+	  -webkit-box;
+	  -webkit-box-pack: inherit;
+	  -webkit-box-align:center;
+	margin: 0;
+	padding: 0;
+}
+
 .mapa-small {
 	height: 60vh;
 	background-image: url(../img/mapasmall.jpg);
@@ -103,6 +174,8 @@ input[type=text] {
 	font-size: 1em;
 }
 
+.condividi {}
+
 .hr {
 	margin-top: 1vh;
 	margin-bottom: 1vh;
@@ -117,10 +190,61 @@ hr {
 	font-size: 2em;
 }
 
+@media only screen and (min-width: 40.063em) {
+	.social {
+	background-color: #efefef;
+	color: #525463;
+	padding: 6vh 0 4vh 0;
+	margin: 4vh 0 8vh 0;
+	font-size: 1.2em;
+	display: flex;
+
+}
+
+.condividi {
+	padding: 0;
+	margin: 0;
+	height: 5vh;
+	display:
+	  -webkit-box;
+	  -webkit-box-pack: center;
+	  -webkit-box-align:center;
+}
+
+.divider {
+	overflow: visible;
+}
+
+.hr {
+	padding: 0;
+	margin: 0;
+	width: 50px;
+	transform: rotate(90deg);
+}
+
+hr {
+	width: 25vw;
+	margin-left: 33vw;
+}
+
+.social-icons {
+	font-size: 1.9em;
+}
+ }
+
 .copyright {
 	font-size: .8em;
 	color: #525463;
+	padding-bottom: 1vh;
 }
+
+@media only screen and (min-width: 40.063em) {
+.copyright {
+	font-size: 1.2em;
+	color: #525463;
+	padding-bottom: 1vh;
+}
+ }
 
 .viaggi {
 	background-color: #FFFFFF;
@@ -150,6 +274,18 @@ hr {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+@media only screen and (min-width: 40.063em) {
+.toucan {
+	height: 10vh;
+	margin: 0 0 0 1.5vh;
+	padding: 0;
+	background-image: url(../img/toucan.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 }
 
 .content {
@@ -233,6 +369,23 @@ hr {
 }
 
 .pais, .ciudad {
+	padding: 0 15px 0 0;
+}
+
+.more {
+	font-size: 1.3em;
+	padding: 0 20px 10px 0;
+	margin: 0;
+	font-family: 'caviar_dreamsbold';
+}
+
+.more a {
+	color: #51ae32 !important;
+}
+
+/*----------------------------------AMICI--------------------------------*/
+
+.amici-m-wrapper {
 	padding: 0;
 }
 
@@ -251,18 +404,38 @@ hr {
 	margin: 2vh 0 1vh 0;
 }
 
+@media only screen and (min-width: 40.063em) {
+.amici-profile {
+	height: 10vh;
+	padding: 0;
+	margin: 0;
+}
+ }
+
 .amici-profile-pic {
-	height: 8vh;
+	height: 3vh;
 	margin: 0;
 	padding: 0;
 	background-image: url(../img/profileironman.png);
-	background-size: 100%;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
+@media only screen and (min-width: 40.063em) {
+	.amici-profile-pic {
+	height: 10vh;
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/profileironman.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+ }
+
 .amici-username {
-	height: 8vh;
+	height: 3vh;
 	font-size: .8em;
 	display: table;
     vertical-align: bottom;
@@ -273,6 +446,23 @@ hr {
 	display: table-cell;
 	vertical-align: bottom;
 }
+
+@media only screen and (min-width: 40.063em) {
+	.amici-username {
+	height: 7vh;
+	font-size: 1.2em;
+	display: table;
+    vertical-align: bottom;
+    color: #525463;
+}
+
+.amici-username p {
+	font-size: 1.2em;
+	display: table-cell;
+	vertical-align: bottom;
+}
+ }
+
 
 .amici-foto {
 	padding: 0;
@@ -288,6 +478,19 @@ hr {
 	display: table-cell;
     vertical-align: bottom;
     color: #525463
+}
+
+.reel {
+	height: 60px;
+	color: #525463;
+	font-size: 2em;
+	margin: 1vh 0 0 0;
+	padding: 0;
+	border: 2px #c6c6c6 solid;
+}
+
+.reel img {
+	padding-left: 20px;
 }
 
 /*MEDIUM STYLES*/
@@ -334,6 +537,73 @@ hr {
 	margin: 2px;
 }
 
-.end {
-	
+.viaggi-info-m {
+	padding: 0;
+	margin: 0;
+}
+
+.viaggi-foto-m {
+	padding: 1vh 0 1vh 0;
+}
+
+.info-wrap {
+	padding: 0;
+	margin: 0;
+}
+
+.content-m {
+	height: 4vh;
+	margin: 0 -1.5vh 0 0;
+	padding: 0;
+	padding-top: 2vh;
+}
+
+.guarda-viaggi-m {
+	margin:  0;
+	padding: 0;
+}
+
+.guarda-viaggi-m p {
+	font-size: 1em;
+	display: table-cell;
+    vertical-align: bottom;
+    color: #525463
+}
+
+.viaggi-social-m {
+	height: 5vh;
+    margin: 1px 1px 0px 1px;
+    padding: 0;
+    font-size: 2em;
+    color: #525463;
+    border: 2px #c6c6c6 solid;
+}
+
+.viaggi-location-m {
+	height: 4vh;
+}
+
+.user-location-m {
+	height: 4vh;
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/user-location.svg);
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.text-location-m {
+	margin:  0;
+	padding: 15px 0 0 0;
+	display: inline-flex;
+	font-size: .9em;
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+.text-location-m p {
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
 }
