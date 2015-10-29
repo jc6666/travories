@@ -26,6 +26,8 @@
 
 body {
   font-family: 'caviar_dreamsregular', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -37,6 +39,14 @@ a {
 	padding-top: 2vh;
 	padding-bottom: 12vh;
 }
+
+/*@media only screen and (min-width: 64em) {
+	.logo {
+	height: 15vh;
+	padding-top: 2vh;
+	padding-bottom: 17vh;
+}
+}*/
 
 .top {
 	height: 11vh;
@@ -64,6 +74,12 @@ a {
 	padding-top: 2.8vh;
 }
 
+.search-icon {
+	transform: translate(-20px,-6px);
+    margin: 0;
+    padding: 0;
+}
+
 form {
 	height: 12vh;
 	width: 80vw;
@@ -77,8 +93,6 @@ form {
 	color: #525463;
 	position: absolute;
 	height: 1em;
-	width: 10vw;
-	width: 20px !important;
 	margin: 3px;
 }
 
@@ -88,7 +102,7 @@ input[type=text] {
 	border-radius: 15px;
 	background-color: #c6c6c6;
 	font-size: .8em;
-	padding-left: 20vw;
+	padding-left: 10vw;
 }
 
 .over-map {
@@ -108,14 +122,13 @@ input[type=text] {
 	height: 8vh;
 	padding: 0;
 	margin: 0;
-	transform: rotate(270deg) translate(-28vh,62vw); 
+	transform: rotate(270deg) translate(-28vh,62.1vw); 
 	position: absolute;
 	z-index: 10;
 }
 
 .chat {
-	padding: 0;
-	padding-top: 3px;
+	padding: 3px 0 1px 0;
 	margin: 0;
 	transform: rotate(90deg);
 }
@@ -129,11 +142,12 @@ input[type=text] {
 }
 
 .side-page-title {
+	font-family: 'caviar_dreamsbold';
 	height: 6.8vh;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	display:
 	  -webkit-box;
-	  -webkit-box-pack: inherit;
+	  -webkit-box-pack: center;
 	  -webkit-box-align:center;
 	margin: 0;
 	padding: 0;
@@ -157,6 +171,7 @@ input[type=text] {
 }
 
 .page-title {
+	font-family: 'caviar_dreamsbold';
 	height: 8vh;
 	font-size: 1.2em;
 	display:
@@ -164,6 +179,12 @@ input[type=text] {
 	  -webkit-box-pack: inherit;
 	  -webkit-box-align:center;
 	margin: 0;
+}
+
+.camera-icon {
+	transform: translate(-4px,5px);
+    margin: 0;
+    padding-right: 12vw;
 }
 
 .social {
@@ -212,7 +233,7 @@ hr {
 }
 
 .divider {
-	overflow: visible;
+	padding-left: 10vw;
 }
 
 .hr {
@@ -369,7 +390,8 @@ hr {
 }
 
 .pais, .ciudad {
-	padding: 0 15px 0 0;
+	padding: 0;
+	display: -webkit-inline-box;
 }
 
 .more {
@@ -490,14 +512,14 @@ hr {
 }
 
 .reel img {
-	padding-left: 20px;
+	padding-left: 5px;
 }
 
 /*MEDIUM STYLES*/
 
 .logo-m {
 	height: 12vh;
-	padding-top: 3vh;
+	padding-top: 2.5vh;
 }
 
 .username {
