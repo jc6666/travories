@@ -40,18 +40,30 @@ a {
 	padding-bottom: 12vh;
 }
 
-/*@media only screen and (min-width: 64em) {
-	.logo {
-	height: 15vh;
-	padding-top: 2vh;
-	padding-bottom: 17vh;
+.logo-m {
+	height: 12vh;
+	padding-top: 2.5vh;
 }
-}*/
+
+@media only screen and (min-width: 64em) {
+	.logo-m {
+	height: 20vh;
+	padding-top: 3vh;
+	}
+}
 
 .top {
 	height: 11vh;
 	margin: 0;
+	padding: 0 0 0 0;
+}
+
+@media only screen and (min-width: 64em) {
+	.top {
+	height: 20vh;
+	margin: 0;
 	padding: 0 0 1px 0;
+	}
 }
 
 .greeting p {
@@ -63,15 +75,80 @@ a {
     color: #525463;
 }
 
+.username {
+	height: 12vh;
+	padding: 0;
+	margin: 0;
+}
+
 .user {
 	color: #eb6619 !important;
+}
+
+.profile-pic {
+	height: 12vh;
+	padding: 0;
+	padding-top: 1vh;
+	padding-left: 1px;
+}
+
+@media only screen and (min-width: 64em) {
+	.profile-pic {
+	height: 17vh;
+	padding: 0;
+	padding-top: 1vh;
+	padding-left: 1px;
+	}
+}
+
+@media only screen and (min-width: 64em) {
+	.username {
+	height: 20vh;
+	padding: 0;
+	margin: 0;
+	}
+
+	.user {
+	color: #eb6619 !important;
+	}
+
+	.profile-pic {
+	height: 20vh;
+	padding: 0;
+	padding-top: 5vh;
+	padding-left: 1px;
+	}
+}
+
+.greeting-m {
+	height: 20vh;
+	padding: 0;
+	margin: 0;
+	display: table-cell;
+    vertical-align: bottom;
+}
+
+.greeting-m p {
+	height: 9vh;
+	font-size: 1.3em;
+	display: table-cell;
+    vertical-align: bottom;
+}
+
+@media only screen and (min-width: 64em) {
+	.greeting-m p {
+	height: 17vh;
+	font-size: 1.3em;
+	display: table-cell;
+    vertical-align: bottom;
+	}
 }
 
 .search {
 	height: 12vh;
 	vertical-align: center;
 	background-color: #efefef;
-	padding-top: 2.8vh;
+	padding-top: 2vh;
 }
 
 .search-icon {
@@ -107,10 +184,20 @@ input[type=text] {
 
 .over-map {
 	padding: 0;
-    transform: translatey(12vh);
+    transform: translatey(11vh);
     height: 72vh;
     position: absolute;
     z-index: 9;
+}
+
+@media only screen and (min-width: 40.063em) and (orientation: landscape) {
+	.over-map {
+	padding: 0;
+    transform: translatey(20vh);
+    height: 72vh;
+    position: absolute;
+    z-index: 9;
+	}
 }
 
 .float-button {
@@ -119,18 +206,58 @@ input[type=text] {
 }
 
 .side-bar {
-	height: 8vh;
 	padding: 0;
 	margin: 0;
-	transform: rotate(270deg) translate(-28vh,62.1vw); 
+	transform: rotate(270deg) translate(-28vh,61.8vw); 
 	position: absolute;
 	z-index: 10;
 }
 
-.chat {
-	padding: 3px 0 1px 0;
+@media only screen and (min-width: 40.063em) and (orientation: landscape) {
+	.side-bar {
+	height: 56px;
+	padding: 0;
+	margin: 0;
+	transform: rotate(270deg) translate(-24vh,71.6vw); 
+	position: absolute;
+	z-index: 10;
+	}
+}
+
+@media only screen and (min-width: 64.063em) and (orientation: landscape) {
+	.side-bar {
+	height: 56px;
+	padding: 0;
+	margin: 0;
+	transform: rotate(270deg) translate(-28vh,79.5vw); 
+	position: absolute;
+	z-index: 10;
+	}
+}
+
+.chat-portrait {
+	height: 74px;
+	width: 77px;
+	padding: 10px 0 0 0;
 	margin: 0;
 	transform: rotate(90deg);
+}
+
+.chat-landscape {
+	width: 54px;
+	padding: 5px 0 0 0;
+	margin: 0;
+	transform: rotate(90deg);
+}
+
+@media only screen and (min-width: 40em) and (orientation: landscape) {
+	.chat {
+	height: 64px;
+    width: 62px;
+    padding: 5px 0 0 0;
+	margin: 0;
+	transform: rotate(90deg);
+	}
 }
 
 .side-page {
@@ -162,7 +289,24 @@ input[type=text] {
 	padding: 0;
 }
 
+.mapa-large {
+	height: 65vh;
+	background-image: url(../img/mapalarge.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 4vh;
+	padding: 0;
+}
+
 .page {
+	border: 3px #525463 solid;
+	border-radius: 15px;
+	background-color: #efefef;
+	padding: 0;
+	margin: 2px;
+}
+
+.page-m {
 	border: 3px #525463 solid;
 	border-radius: 15px;
 	background-color: #efefef;
@@ -219,10 +363,9 @@ hr {
 	margin: 4vh 0 8vh 0;
 	font-size: 1.2em;
 	display: flex;
+	}
 
-}
-
-.condividi {
+	.condividi {
 	padding: 0;
 	margin: 0;
 	height: 5vh;
@@ -230,28 +373,28 @@ hr {
 	  -webkit-box;
 	  -webkit-box-pack: center;
 	  -webkit-box-align:center;
-}
+	}
 
-.divider {
+	.divider {
 	padding-left: 10vw;
-}
+	}
 
-.hr {
+	.hr {
 	padding: 0;
 	margin: 0;
 	width: 50px;
-	transform: rotate(90deg);
-}
+		transform: rotate(90deg);
+	}
 
-hr {
+	hr {
 	width: 25vw;
 	margin-left: 33vw;
-}
+	}
 
-.social-icons {
+	.social-icons {
 	font-size: 1.9em;
+	}
 }
- }
 
 .copyright {
 	font-size: .8em;
@@ -260,12 +403,12 @@ hr {
 }
 
 @media only screen and (min-width: 40.063em) {
-.copyright {
+	.copyright {
 	font-size: 1.2em;
 	color: #525463;
 	padding-bottom: 1vh;
+	}
 }
- }
 
 .viaggi {
 	background-color: #FFFFFF;
@@ -280,11 +423,20 @@ hr {
 	padding: 2vh 0 0 0;
 }
 
+.viaggi-foto-m {
+	padding: 1vh 0 1vh 0;
+}
+
 .viaggi-info {
 	height: 8vh;
 	font-size: .8em;
 	margin: 1vh 0 0 0;
 	padding: 0;
+}
+
+.viaggi-info-m {
+	padding: 0;
+	margin: 0;
 }
 
 .toucan {
@@ -298,7 +450,7 @@ hr {
 }
 
 @media only screen and (min-width: 40.063em) {
-.toucan {
+	.toucan {
 	height: 10vh;
 	margin: 0 0 0 1.5vh;
 	padding: 0;
@@ -306,13 +458,45 @@ hr {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
+	}
 }
+
+@media only screen and (min-width: 64em) {
+	.toucan {
+	height: 9vh;
+	margin: 3vh 0 0 1.5vh;
+	padding: 0;
+	background-image: url(../img/toucan.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+}
+
+.info-wrap {
+	padding: 0;
+	margin: 0;
 }
 
 .content {
 	height: 4vh;
 	margin: 0 -1.5vh 0 0;
 	padding: 0;
+}
+
+.content-m {
+	height: 4vh;
+	margin: 0 -1.5vh 0 0;
+	padding: 0;
+	padding-top: 2vh;
+}
+
+@media only screen and (min-width: 64em) {
+	.content-m {
+	height: 14vh;
+	margin: 0 -1.5vh 0 0;
+	padding: 0;
+	}
 }
 
 .guarda-viaggi {
@@ -325,6 +509,25 @@ hr {
 	display: table-cell;
     vertical-align: bottom;
     color: #525463
+}
+
+.guarda-viaggi-m {
+	margin:  0;
+	padding: 0;
+}
+
+.guarda-viaggi-m p {
+	font-size: 1em;
+	display: table-cell;
+    vertical-align: bottom;
+    color: #525463
+}
+
+@media only screen and (min-width: 64em) {
+	.guarda-viaggi-m {
+	margin-top: 3vh;
+	padding: 0;
+	}
 }
 
 .hr2 {
@@ -352,15 +555,46 @@ hr {
 
 .viaggi-social {
 	height: 5vh;
-    margin: -13.5px 13.5px 0px 19px;
+    margin: -13.5px 9.5px 0px 19px;
     padding: 0;
-    font-size: 1.4em;
+    font-size: 1.1em;
     color: #525463;
     border: 2px #c6c6c6 solid;
 }
 
+.viaggi-social-m {
+	height: 5vh;
+    margin: 1px 1px 0px 1px;
+    padding: 0;
+    font-size: 2em;
+    color: #525463;
+    border: 2px #c6c6c6 solid;
+}
+
+@media only screen and (min-width: 64em) {
+	.viaggi-social-m {
+	height: 5vh;
+    margin: 1px 1px 0px 1px;
+    padding: 0;
+    font-size: 1.5em;
+    color: #525463;
+    border: 2px #c6c6c6 solid;
+	}
+}
+
+
 .viaggi-location {
 	height: 8vh;
+}
+
+.viaggi-location-m {
+	height: 4vh;
+}
+
+@media only screen and (min-width: 64em) {
+	.viaggi-location-m {
+	height: 8vh;
+	}
 }
 
 .user-location {
@@ -371,6 +605,16 @@ hr {
 	background-size: 110%;
 	background-repeat: no-repeat;
 	background-position: left;
+}
+
+.user-location-m {
+	height: 4vh;
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/user-location.svg);
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .text-location {
@@ -385,6 +629,21 @@ hr {
 
 .text-location p {
 	font-size: .8em;
+	margin: 0;
+	padding: 0;
+}
+
+.text-location-m {
+	margin:  0;
+	padding: 15px 0 0 0;
+	display: inline-flex;
+	font-size: .9em;
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+.text-location-m p {
+	font-size: 1.2em;
 	margin: 0;
 	padding: 0;
 }
@@ -515,117 +774,11 @@ hr {
 	padding-left: 5px;
 }
 
-/*MEDIUM STYLES*/
 
-.logo-m {
-	height: 12vh;
-	padding-top: 2.5vh;
-}
 
-.username {
-	height: 12vh;
-	padding: 0;
-	margin: 0;
-}
 
-.profile-pic {
-	height: 12vh;
-	padding: 0;
-	padding-top: 1vh;
-	padding-left: 1px;
-}
 
-.greeting-m {
-	height: 12vh;
-	padding: 0;
-	margin: 0;
-	height: 12vh;
-	display: table-cell;
-    vertical-align: bottom;
-}
 
-.greeting-m p {
-	height: 9vh;
-	font-size: 1.3em;
-	display: table-cell;
-    vertical-align: bottom;
-}
 
-.page-m {
-	border: 3px #525463 solid;
-	border-radius: 15px;
-	background-color: #efefef;
-	padding: 0;
-	margin: 2px;
-}
 
-.viaggi-info-m {
-	padding: 0;
-	margin: 0;
-}
 
-.viaggi-foto-m {
-	padding: 1vh 0 1vh 0;
-}
-
-.info-wrap {
-	padding: 0;
-	margin: 0;
-}
-
-.content-m {
-	height: 4vh;
-	margin: 0 -1.5vh 0 0;
-	padding: 0;
-	padding-top: 2vh;
-}
-
-.guarda-viaggi-m {
-	margin:  0;
-	padding: 0;
-}
-
-.guarda-viaggi-m p {
-	font-size: 1em;
-	display: table-cell;
-    vertical-align: bottom;
-    color: #525463
-}
-
-.viaggi-social-m {
-	height: 5vh;
-    margin: 1px 1px 0px 1px;
-    padding: 0;
-    font-size: 2em;
-    color: #525463;
-    border: 2px #c6c6c6 solid;
-}
-
-.viaggi-location-m {
-	height: 4vh;
-}
-
-.user-location-m {
-	height: 4vh;
-	margin: 0;
-	padding: 0;
-	background-image: url(../img/user-location.svg);
-	background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-}
-
-.text-location-m {
-	margin:  0;
-	padding: 15px 0 0 0;
-	display: inline-flex;
-	font-size: .9em;
-	display: table-cell;
-	vertical-align: bottom;
-}
-
-.text-location-m p {
-	font-size: 1.2em;
-	margin: 0;
-	padding: 0;
-}
