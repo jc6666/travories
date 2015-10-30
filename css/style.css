@@ -295,7 +295,7 @@ input[type=text] {
 }
 
 /*ipad landscape side-bar*/
-@media only screen and (min-width: 64em) and (orientation: landscape) {
+@media only screen and (max-width: 64em) and (orientation: landscape) {
 	.side-bar {
 	height: 56px;
 	padding: 0;
@@ -306,13 +306,21 @@ input[type=text] {
 	}
 }
 
+/*small-desktop*/
+@media only screen and (max-width: 74.938em) {
+	.side-bar {
+		-webkit-transform: rotate(270deg) translate(-24vh,76vw); 
+	position: absolute;
+	}
+}
+
 /*desktop side-bar*/
-@media only screen and (min-width: 75em) and (orientation: landscape) {
+@media only screen and (min-width: 75em) {
 	.side-bar {
 	height: 56px;
 	padding: 0;
 	margin: 0;
-	-webkit-transform: rotate(270deg) translate(-28vh,79.5vw); 
+	-webkit-transform: rotate(270deg) translate(-28vh,76vw); 
 	position: absolute;
 	z-index: 10;
 	}
@@ -340,6 +348,15 @@ input[type=text] {
     padding: 5px 0 0 0;
 	margin: 0;
 	-webkit-transform: rotate(90deg);
+	}
+}
+
+@media only screen and (min-width: 64.063em) {
+	.chat-landscape{
+		width: 42px;
+	    padding: 5px 0 0 0;
+	    margin: 0;
+	    -webkit-transform: rotate(90deg);
 	}
 }
 
