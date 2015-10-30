@@ -40,9 +40,25 @@ a {
 	padding-bottom: 12vh;
 }
 
+@media only screen and (max-width: 39.938em) and (orientation: landscape) {
+	.logo {
+	height: 30vh;
+	}
+
+	.logo img {
+	width: 70%;
+	}
+}
+
 .logo-m {
 	height: 12vh;
 	padding-top: 2.5vh;
+}
+
+@media only screen and (min-width: 40em) and (max-width: 47.938em) {
+	.logo-m {
+		height: 20vh;
+	}
 }
 
 @media only screen and (min-width: 64em) {
@@ -53,9 +69,27 @@ a {
 }
 
 .top {
-	height: 11vh;
 	margin: 0;
 	padding: 0 0 0 0;
+}
+
+@media only screen  and (max-width: 39.938em) and (orientation: landscape) {
+	.top {
+		height: 17vh;
+		padding: 0;
+	}
+}
+
+@media only screen and (min-width: 40em) and (max-width: 47.938em) {
+	.top {
+		height: 20vh;
+	}
+}
+
+@media only screen and (min-width: 48em) and (max-width: 63.938em) {
+	.top {
+		height: 11vh;
+	}
 }
 
 @media only screen and (min-width: 64em) {
@@ -75,10 +109,23 @@ a {
     color: #525463;
 }
 
+@media only screen and (orientation: landscape) {
+	.greeting p {
+		height: 15vh;
+		display: table-cell;
+		vertical-align: bottom;
+	}
+}
+
 .username {
 	height: 12vh;
 	padding: 0;
 	margin: 0;
+}
+@media only screen and (min-width: 40em) and (max-width: 47.938em) {
+	.username {
+		height: 20vh;
+	}
 }
 
 .user {
@@ -90,6 +137,15 @@ a {
 	padding: 0;
 	padding-top: 1vh;
 	padding-left: 1px;
+}
+
+@media only screen and (min-width: 40em) and (max-width: 47.938em) {
+	.profile-pic {
+		height: 20vh;
+	}
+	.profile-pic img {
+		width: 48%;
+	}
 }
 
 @media only screen and (min-width: 64em) {
@@ -134,6 +190,11 @@ a {
 	display: table-cell;
     vertical-align: bottom;
 }
+@media only screen and (min-width: 40em) and (max-width: 47.938em) {
+	.greeting-m p {
+		height: 18vh;
+	}
+}
 
 @media only screen and (min-width: 64em) {
 	.greeting-m p {
@@ -149,6 +210,13 @@ a {
 	vertical-align: center;
 	background-color: #efefef;
 	padding-top: 2vh;
+}
+
+@media only screen and (orientation: landscape) {
+	.search {
+		height: 17vh;
+		margin: 2vh 0 0 0;
+	}
 }
 
 .search-icon {
@@ -184,7 +252,7 @@ input[type=text] {
 
 .over-map {
 	padding: 0;
-    transform: translatey(11vh);
+    -webkit-transform: translatey(11vh);
     height: 72vh;
     position: absolute;
     z-index: 9;
@@ -193,7 +261,7 @@ input[type=text] {
 @media only screen and (min-width: 40.063em) and (orientation: landscape) {
 	.over-map {
 	padding: 0;
-    transform: translatey(20vh);
+    -webkit-transform: translatey(20vh);
     height: 72vh;
     position: absolute;
     z-index: 9;
@@ -205,31 +273,46 @@ input[type=text] {
 	margin: 0;
 }
 
+@media only screen and (min-width: 40em) and (max-width: 47.938em) {
+	.float-button img {
+		width: 50%
+	}
+}
+
 .side-bar {
 	padding: 0;
 	margin: 0;
-	transform: rotate(270deg) translate(-28vh,61.8vw); 
+	-webkit-transform: rotate(270deg) translate(-28vh,61.8vw); 
 	position: absolute;
 	z-index: 10;
 }
 
-@media only screen and (min-width: 40.063em) and (orientation: landscape) {
+/*iphone 6 and 6plus side-bar */
+@media only screen and (min-width: 40em) and (max-width: 47.938em) {
+	.side-bar {
+		display: none !important;
+	}
+}
+
+/*ipad landscape side-bar*/
+@media only screen and (min-width: 64em) and (orientation: landscape) {
 	.side-bar {
 	height: 56px;
 	padding: 0;
 	margin: 0;
-	transform: rotate(270deg) translate(-24vh,71.6vw); 
+	-webkit-transform: rotate(270deg) translate(-24vh,71.6vw); 
 	position: absolute;
 	z-index: 10;
 	}
 }
 
-@media only screen and (min-width: 64.063em) and (orientation: landscape) {
+/*desktop side-bar*/
+@media only screen and (min-width: 75em) and (orientation: landscape) {
 	.side-bar {
 	height: 56px;
 	padding: 0;
 	margin: 0;
-	transform: rotate(270deg) translate(-28vh,79.5vw); 
+	-webkit-transform: rotate(270deg) translate(-28vh,79.5vw); 
 	position: absolute;
 	z-index: 10;
 	}
@@ -240,14 +323,14 @@ input[type=text] {
 	width: 77px;
 	padding: 10px 0 0 0;
 	margin: 0;
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
 }
 
 .chat-landscape {
 	width: 54px;
 	padding: 5px 0 0 0;
 	margin: 0;
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
 }
 
 @media only screen and (min-width: 40em) and (orientation: landscape) {
@@ -256,7 +339,7 @@ input[type=text] {
     width: 62px;
     padding: 5px 0 0 0;
 	margin: 0;
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
 	}
 }
 
@@ -289,8 +372,14 @@ input[type=text] {
 	padding: 0;
 }
 
+@media only screen and (max-width: 39.938em) and (orientation: landscape) {
+	.mapa-small {
+		height: 85vh;
+	}
+}
+
 .mapa-large {
-	height: 65vh;
+	height: 75vh;
 	background-image: url(../img/mapalarge.jpg);
 	background-size: cover;
 	background-position: center;
@@ -325,10 +414,37 @@ input[type=text] {
 	margin: 0;
 }
 
+/* iphone 6 and 6plus landscape*/
+@media only screen and (min-width: 40em) and (max-width: 47.938em) {
+	.page-title {
+		height: 10vh;
+	}
+}
+
+/*small landscape*/
+@media only screen and (max-width: 39.938em) and (orientation: landscape) {
+	.page-title {
+		height: 12vh;
+	}
+}
+
+@media only screen and (min-width: 48em) and (max-width: 64em) {
+	.page-title {
+	height: 5vh
+	}
+}
+
 .camera-icon {
-	transform: translate(-4px,5px);
+	-webkit-transform: translate(-4px,5px);
     margin: 0;
     padding-right: 12vw;
+}
+
+/*iphone 6 and 6 plus landscape*/
+@media only screen and (min-width: 40em) and (max-width: 47.938em) {
+	.camera-icon {
+		padding: 0 5vw 0 1vw;
+	}
 }
 
 .social {
@@ -383,7 +499,7 @@ hr {
 	padding: 0;
 	margin: 0;
 	width: 50px;
-		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
 	}
 
 	hr {
@@ -423,8 +539,21 @@ hr {
 	padding: 2vh 0 0 0;
 }
 
+@media only screen and (max-width: 39.938em) and (orientation: landscape) {
+	.viaggi-foto {
+		margin-bottom: 2vh;
+	}
+}
+
 .viaggi-foto-m {
 	padding: 1vh 0 1vh 0;
+}
+
+/*iphone 6 and 6 plus landscape*/
+@media only screen and (min-width: 40em) and (max-width: 47.938em) {
+	.viaggi-foto-m {
+		padding: 2vh 0 2vh 2vh;
+	}
 }
 
 .viaggi-info {
@@ -432,6 +561,12 @@ hr {
 	font-size: .8em;
 	margin: 1vh 0 0 0;
 	padding: 0;
+}
+
+@media only screen and (max-width: 39.938em) and (orientation: landscape) {
+	.viaggi-info {
+		height: 15vh;
+	}
 }
 
 .viaggi-info-m {
@@ -449,7 +584,21 @@ hr {
 	background-position: center;
 }
 
-@media only screen and (min-width: 40.063em) {
+/* small landscape*/
+@media only screen and (max-width: 39.938em) and (orientation: landscape) {
+	.toucan {
+		height: 15vh;
+	}
+}
+
+/*iphone 6 and 6 plus landscape */
+@media only screen and (min-width: 40em) and (max-width: 47.938em) {
+	.toucan {
+		height: 19vh;
+	}
+}
+
+@media only screen and (min-width: 48em) {
 	.toucan {
 	height: 10vh;
 	margin: 0 0 0 1.5vh;
@@ -562,13 +711,28 @@ hr {
     border: 2px #c6c6c6 solid;
 }
 
+@media only screen and (max-width: 39.938em) and (orientation:landscape) {
+	.viaggi-social {
+	height: 11vh;
+   	margin: 5.5px 9.5px 21px 19px;
+    font-size: 1.6em;
+	}
+}
+
 .viaggi-social-m {
 	height: 5vh;
     margin: 1px 1px 0px 1px;
     padding: 0;
-    font-size: 2em;
+    font-size: 1.47em;
     color: #525463;
     border: 2px #c6c6c6 solid;
+}
+
+/*iphone 6 and 6 plus landscape*/
+@media only screen and (min-width: 40em) and (max-width: 47.938em) {
+	.viaggi-social-m {
+		height: 14vh;
+	}
 }
 
 @media only screen and (min-width: 64em) {
@@ -582,13 +746,26 @@ hr {
 	}
 }
 
-
 .viaggi-location {
 	height: 8vh;
 }
 
+@media only screen and (max-width: 39.938em) and (orientation: landscape) {
+	.viaggi-location {
+		height: 18vh;
+	}
+}
+
 .viaggi-location-m {
 	height: 4vh;
+}
+
+/*iphone 6 and 6 plus landscape*/
+@media only screen and (min-width: 40em) and (max-width: 47.938em) {
+	.viaggi-location-m  {
+		height: 12vh;
+		font-size: .8em;
+	}
 }
 
 @media only screen and (min-width: 64em) {
@@ -607,14 +784,35 @@ hr {
 	background-position: left;
 }
 
+@media only screen and (max-width: 39.938em) and (orientation: landscape) {
+	.user-location {
+		height: 18vh;
+		background-size: 70%;
+	}
+}
+
 .user-location-m {
-	height: 4vh;
+	height: 6vh;
 	margin: 0;
 	padding: 0;
 	background-image: url(../img/user-location.svg);
 	background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
+}
+
+@media only screen and (orientation: portrait) {
+	.user-location-m {
+		height: 4vh;
+	}
+}
+
+
+/*iphone 6 and 6 plus landscape*/
+@media only screen and (min-width: 40em) and (max-width: 47.938em) {
+	.user-location-m{
+	height: 11vh;
+}
 }
 
 .text-location {
@@ -625,6 +823,17 @@ hr {
 	display: table-cell;
 	vertical-align: bottom;
 	padding-top: 2vh;
+}
+
+@media only screen and (max-width: 39.938em) and (orientation: landscape) {
+	.text-location {
+		height: 18vh;
+	}
+	.text-location p {
+	height: 12vh;
+	display: table-cell;
+    vertical-align: bottom;
+	}
 }
 
 .text-location p {
@@ -680,12 +889,26 @@ hr {
 }
 
 .amici-profile {
-	height: 8vh;
+	height: 6vh;
 	padding: 0;
 	margin: 2vh 0 1vh 0;
 }
 
-@media only screen and (min-width: 40.063em) {
+/*iphone 6 and 6 plus landscape*/
+@media only screen and (min-width: 40em) and (max-width: 47.938em) {
+	.amici-profile {
+		padding-top: 1.5vh;
+	}
+}
+
+@media only screen and (max-width: 39.398em) and (orientation: landscape) {
+	.amici-profile {
+		height: 10vh;
+		margin: 2vh 0 4vh 0;
+	}
+}
+
+@media only screen and (min-width: 48em) {
 .amici-profile {
 	height: 10vh;
 	padding: 0;
@@ -694,13 +917,20 @@ hr {
  }
 
 .amici-profile-pic {
-	height: 3vh;
+	height: 6vh;
 	margin: 0;
 	padding: 0;
 	background-image: url(../img/profileironman.png);
 	background-size: contain;
-	background-position: center;
+	background-position: right;
 	background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 39.398em) and (orientation: landscape) {
+	.amici-profile-pic {
+		height: 11vh;
+		background-position: right;
+	}
 }
 
 @media only screen and (min-width: 40.063em) {
@@ -716,11 +946,17 @@ hr {
  }
 
 .amici-username {
-	height: 3vh;
+	height: 6vh;
 	font-size: .8em;
 	display: table;
     vertical-align: bottom;
     color: #525463;
+}
+
+@media only screen and (max-width: 39.938em) and (orientation: landscape) {
+	.amici-username {
+		height: 10vh;
+	}
 }
 
 .amici-username p {
