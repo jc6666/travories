@@ -28,6 +28,7 @@ body {
   font-family: 'caviar_dreamsregular', sans-serif;
   padding: 0;
   margin: 0;
+  overflow-x:hidden
 }
 
 a {
@@ -38,6 +39,10 @@ a {
 	height: 12vh;
 	padding-top: 2vh;
 	padding-bottom: 12vh;
+	background-image: url(../img/logo.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 39.938em) and (orientation: landscape) {
@@ -53,6 +58,10 @@ a {
 .logo-m {
 	height: 12vh;
 	padding-top: 2.5vh;
+	background-image: url(../img/logo.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 40em) and (max-width: 47.938em) {
@@ -139,12 +148,16 @@ a {
 	padding-left: 1px;
 }
 
+.profile-pic img {
+	max-height: 12vh;
+}
+
 @media only screen and (min-width: 40em) and (max-width: 47.938em) {
 	.profile-pic {
 		height: 20vh;
 	}
 	.profile-pic img {
-		width: 48%;
+		max-height: 20vh;
 	}
 }
 
@@ -307,9 +320,9 @@ input[type=text] {
 }
 
 /*small-desktop*/
-@media only screen and (max-width: 74.938em) {
+@media only screen and (min-width: 64.01em) {
 	.side-bar {
-		-webkit-transform: rotate(270deg) translate(-24vh,76vw); 
+		-webkit-transform: rotate(270deg) translate(-24vh,75vw); 
 	position: absolute;
 	}
 }
@@ -357,6 +370,13 @@ input[type=text] {
 	    padding: 5px 0 0 0;
 	    margin: 0;
 	    -webkit-transform: rotate(90deg);
+	}
+}
+
+@media only screen and (min-width: 65em) {
+	.chat-landscape {
+	width: 55px;
+    padding: 6px 0 0 0;
 	}
 }
 
