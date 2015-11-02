@@ -402,9 +402,6 @@ input[type=text] {
 
 .mapa-small {
 	height: 60vh;
-	background-image: url(../img/mapasmall.jpg);
-	background-size: cover;
-	background-position: center;
 	margin-bottom: 4vh;
 	padding: 0;
 }
@@ -417,9 +414,6 @@ input[type=text] {
 
 .mapa-large {
 	height: 75vh;
-	background-image: url(../img/mapalarge.jpg);
-	background-size: cover;
-	background-position: center;
 	margin-bottom: 4vh;
 	padding: 0;
 }
