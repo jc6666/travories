@@ -265,8 +265,6 @@ input[type=text] {
 
 .over-map {
 	padding: 0;
-    -webkit-transform: translatey(11vh);
-    height: 72vh;
     position: absolute;
     z-index: 9;
 }
@@ -274,14 +272,13 @@ input[type=text] {
 @media only screen and (min-width: 40.063em) and (orientation: landscape) {
 	.over-map {
 	padding: 0;
-    -webkit-transform: translatey(20vh);
-    height: 72vh;
     position: absolute;
     z-index: 9;
 	}
 }
 
 .float-button {
+	transform: translateX(6vh);
 	padding: 0;
 	margin: 0;
 }
@@ -290,6 +287,10 @@ input[type=text] {
 	.float-button img {
 		width: 50%
 	}
+}
+
+.burger-menu {
+	transform: translateX(-7vh);
 }
 
 .side-bar {
@@ -313,7 +314,7 @@ input[type=text] {
 	height: 56px;
 	padding: 0;
 	margin: 0;
-	-webkit-transform: rotate(270deg) translate(-24vh,71.6vw); 
+	-webkit-transform: rotate(270deg) translate(-24vh,70vw); 
 	position: absolute;
 	z-index: 10;
 	}
@@ -322,7 +323,7 @@ input[type=text] {
 /*small-desktop*/
 @media only screen and (min-width: 64.01em) {
 	.side-bar {
-		-webkit-transform: rotate(270deg) translate(-24vh,75vw); 
+		-webkit-transform: rotate(270deg) translate(-24vh,73.7vw); 
 	position: absolute;
 	}
 }
@@ -333,7 +334,7 @@ input[type=text] {
 	height: 56px;
 	padding: 0;
 	margin: 0;
-	-webkit-transform: rotate(270deg) translate(-28vh,76vw); 
+	-webkit-transform: rotate(270deg) translate(-28vh,75vw); 
 	position: absolute;
 	z-index: 10;
 	}
@@ -412,21 +413,35 @@ input[type=text] {
 	}
 }
 
-@media only screen and (min-width: 64.063) {
+@media only screen and (min-width: 64.063em) {
 	.mapa {
 		height: 75vh;
 	}
 }
 
 #mapdiv {
+	padding: 0;
 	width:100%;
 	height: 60vh;
 }
 
+@media only screen and (min-width: 64.063em) {
+	#mapdiv {
+		height: 75vh;
+	}
+}
+
 #map /*google*/ {
+	padding: 0;
 	height: 60vh;
 	width: 100%;
 	visibility:hidden;
+}
+
+@media only screen and (min-width: 64.063em) {
+  	#map {
+		height: 75vh;
+	}
 }
 
 .page {
