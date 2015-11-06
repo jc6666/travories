@@ -516,9 +516,16 @@ input[type=text] {
 
 @media only screen and (orientation: landscape) {
 	.posizione {
-	height: 5vh;
+	height: auto;
     padding-top: 11px;
     padding-left: 16vh;
+	}
+}
+
+@media only screen and (max-width: 39.938em) {
+	.posizione {
+		height: auto;
+		text-align: center;
 	}
 }
 
@@ -534,11 +541,25 @@ input[type=text] {
 	font-weight: 700;
 }
 
+@media only screen and (max-width: 39.938em) {
+	.posizione-country {
+		text-align: center;
+	}
+}
+
 .posizione-address {
 	width: 100%;
     text-align: left;
     padding: 0;
     float: none !important;
+    padding-bottom: 1vh;
+}
+
+@media only screen and (max-width: 39.938em) {
+	.posizione-address {
+		text-align: center;
+		display: table-cell;
+	}
 }
 
 .page {
@@ -1175,6 +1196,13 @@ hr {
 	padding-right: 5px;
 }
 
+@media only screen and (min-width: 40em) {
+	.torna {
+		text-align: left;
+		padding-left: 9vw;
+	}
+}
+
 .esperienza {
 	padding: 0;
 
@@ -1194,6 +1222,12 @@ hr {
 	    -webkit-box-align: center;
 }
 
+@media only screen and (min-width: 40em) {
+	.esperienza-title {
+		font-size: 1.3em;
+	}
+}
+
 .edit {
 	margin: -2px;
     transform: translateX(28px);
@@ -1204,24 +1238,55 @@ hr {
 	margin-bottom: 4vh;
 }
 
+@media only screen and (min-width: 40em) {
+	.dates {
+		padding-left: 1vw;
+	}
+}
+
 .date-orange {
 	font-size: .9em;
 	color: #eb6619;
 	margin: 0;
 }
 
+@media only screen and (min-width: 40em) {
+	.date-orange {
+		font-size: 1em;
+	}
+}
+
 .trip-date {
 	padding: 0;
 	font-size: .7em;
 	text-align: center;
-	display: -webkit-box;
+}
+
+@media only screen and (max-width: 39.938em) {
+	.trip-date {
+			display: -webkit-box;
 	    -webkit-box-pack: center;
+	}
+}
+
+@media only screen and (min-width: 40em) {
+	.trip-date {
+		font-size: 1em;
+		display: -webkit-box;
+	}
 }
 
 .publish-date {
 	padding: 0;
 	font-size: .7em;
 	text-align: center;
+}
+
+@media only screen and (min-width: 40em) {
+	.publish-date {
+		font-size: 1em;
+		text-align: right;
+	}
 }
 
 .descrizione {
@@ -1232,12 +1297,19 @@ hr {
     font-size: .7em;
 }
 
+@media only screen and (min-width: 40em) {
+	.descrizione {
+		font-size: 1em
+	}
+}
+
 .descrizione-top {
 	padding: 0;
 	border-top-left-radius:4px;
 	border-top-right-radius:4px;
 	background-color: #c6c6c6;
-	height: 8vh;
+	height: auto;
+	padding-bottom: 2vh;
 }
 
 .star {
@@ -1278,7 +1350,6 @@ hr {
 }
 
 .informazione {
-	margin-top: -.5vh;
 	border: 2px #525463 solid;
     border-radius: 7px;
     background-color: #FFFFFF;
@@ -1287,12 +1358,19 @@ hr {
     padding-bottom: 2vh;
 }
 
+@media only screen and (min-width: 40em) {
+	.informazione {
+		font-size: 1em
+	}
+}
+
 .informazione-top {
 	padding: 0;
 	border-top-left-radius:4px;
 	border-top-right-radius:4px;
 	background-color: #c6c6c6;
-	height: 8vh;
+	height: auto;
+	padding-bottom: 2vh;
 }
 
 .info {
@@ -1315,6 +1393,12 @@ hr {
 	font-size: .9em;
 }
 
+@media only screen and (min-width: 40em) {
+	.dati-generali {
+		font-size: .8em
+	}
+}
+
 .dati-generali span {
 	color: #535364;
 }
@@ -1335,12 +1419,24 @@ hr {
 	font-size: .9em;
 }
 
+@media only screen and (min-width: 40em) {
+	.dati-viaggio {
+		font-size: .8em
+	}
+}
+
 .dati-viaggio span {
 	color: #535364;
 }
 
 .altre-informazioni {
 	font-size: .9em;
+}
+
+@media only screen and (min-width: 40em) {
+	.altre-informazioni {
+		font-size: .8em
+	}
 }
 
 .altre-informazioni span {
@@ -1387,12 +1483,19 @@ hr {
     font-size: .7em;
 }
 
+@media only screen and (min-width: 40em) {
+	.gallery {
+		font-size: 1em;
+	}
+}
+
 .gallery-top {
 	padding: 0;
 	border-top-left-radius:4px;
 	border-top-right-radius:4px;
 	background-color: #c6c6c6;
-	height: 8vh;
+	height: auto;
+	padding-bottom: 2vh;
 }
 
 .camera {
@@ -1420,8 +1523,24 @@ hr {
 	color: #ec661c;
 }
 
+.gallery-wrap {
+	padding: 0;
+}
+
+@media only screen and (min-width: 40em) {
+	.gallery-wrap {
+		padding: 0 2vw 0 2vw;
+	}
+}
+
 .photo {
 	padding: 1vh 2vh 1vh 2vh;
+}
+
+@media only screen and (min-width: 40em) {
+	.photo {
+		padding: 1vh 1vw 1vh 1vw;
+	}
 }
 
 .load-more {
@@ -1433,4 +1552,13 @@ hr {
 	background-color: #51ae32;
 	border-radius: 5px;
 	padding: 8px;
+}
+
+@media only screen and (min-width: 40em) {
+	.load-more {
+		margin-right: 2vh 0 2vh 0;
+	}
+	.load-more span {
+		font-size: .8em;
+	}
 }
