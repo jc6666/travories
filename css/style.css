@@ -218,6 +218,52 @@ a {
 	}
 }
 
+.hidden-bar {
+	/*display: none !important;*/
+	padding: 0;
+}
+
+.opzioni {
+	transform: translate(50px,10px);
+}
+
+@media only screen and (orientation: landscape) {
+	.opzioni {
+		transform: translate(95px,6px);
+	}
+}
+
+.opzioni p {
+	font-size: 0.7em;
+    font-weight: 700;
+    color: #535364;
+    display: inline-block;
+}
+
+.hidden-menu {
+	padding: 0;
+    margin: -6px;
+    display: -webkit-inline-box;
+}
+
+@media only screen and (orientation: landscape) {
+	.hidden-menu {
+		margin: -8px;
+	    display: -webkit-inline-box;
+	}
+}
+
+.hidden-menu-button {
+	padding: 0;
+	min-width: 53px;
+}
+
+@media only screen and (orientation: landscape) {
+	.hidden-menu-button {
+		max-width: 55px;
+	}
+}
+
 .search {
 	height: 12vh;
 	vertical-align: center;
@@ -225,10 +271,24 @@ a {
 	padding-top: 2vh;
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (max-height: 47.938em) and (orientation: landscape) {
 	.search {
 		height: 17vh;
 		margin: 2vh 0 0 0;
+	}
+}
+
+@media only screen and (min-height: 48em) and (orientation: portrait) {
+	.search {
+		height: 5vh;
+		padding-top: 6px;
+	}
+}
+
+@media only screen and (min-height: 48em) and (orientation: landscape) {
+	.search {
+		height: 7vh;
+		padding-top: 8px;
 	}
 }
 
@@ -296,7 +356,7 @@ input[type=text] {
 .side-bar {
 	padding: 0;
 	margin: 0;
-	-webkit-transform: rotate(270deg) translate(-28vh,61.8vw); 
+	-webkit-transform: rotate(270deg) translate(-28vh,59.8vw); 
 	position: absolute;
 	z-index: 10;
 }
@@ -314,7 +374,7 @@ input[type=text] {
 	height: 56px;
 	padding: 0;
 	margin: 0;
-	-webkit-transform: rotate(270deg) translate(-24vh,70vw); 
+	-webkit-transform: rotate(270deg) translate(-20vh,70vw); 
 	position: absolute;
 	z-index: 10;
 	}
@@ -403,8 +463,8 @@ input[type=text] {
 
 .mapa {
 	height: 60vh;
-	margin-bottom: 4vh;
 	padding: 0;
+	margin-bottom: 3vh;
 }
 
 @media only screen and (max-width: 39.938em) and (orientation: landscape) {
@@ -442,6 +502,43 @@ input[type=text] {
   	#map {
 		height: 75vh;
 	}
+}
+
+.posizione {
+	/*display: none;*/
+	background-color: #efefef;
+	height: 3vh;
+	margin-bottom: 4vh;
+	font-size: .7em;
+	padding-top: 9px;
+	padding-left: 7vh;
+}
+
+@media only screen and (orientation: landscape) {
+	.posizione {
+	height: 5vh;
+    padding-top: 11px;
+    padding-left: 16vh;
+	}
+}
+
+.world-icon img {
+	margin-top: -5px;
+    max-width: 24px;
+
+}
+
+.posizione-country {
+	text-align: right;
+	padding: 0;
+	font-weight: 700;
+}
+
+.posizione-address {
+	width: 100%;
+    text-align: left;
+    padding: 0;
+    float: none !important;
 }
 
 .page {
@@ -1067,11 +1164,273 @@ hr {
 	padding-left: 5px;
 }
 
+.torna {
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+	font-size: 1.2em;
+	text-align: center;
+}
 
+.torna img {
+	padding-right: 5px;
+}
 
+.esperienza {
+	padding: 0;
 
+}
 
+.esperienza-title {
+	border: 2px #525463 solid;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 2px;
+    font-size: .7em;
+    font-weight: 700;
+    color: #51ae32;
+    display: -webkit-box;
+	    -webkit-box-pack: center;
+	    -webkit-box-align: center;
+}
 
+.edit {
+	margin: -2px;
+    transform: translateX(28px);
+}
 
+.dates {
+	padding: 0;
+	margin-bottom: 4vh;
+}
 
+.date-orange {
+	font-size: .9em;
+	color: #eb6619;
+	margin: 0;
+}
 
+.trip-date {
+	padding: 0;
+	font-size: .7em;
+	text-align: center;
+	display: -webkit-box;
+	    -webkit-box-pack: center;
+}
+
+.publish-date {
+	padding: 0;
+	font-size: .7em;
+	text-align: center;
+}
+
+.descrizione {
+	border: 2px #525463 solid;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    padding: 0;
+    font-size: .7em;
+}
+
+.descrizione-top {
+	padding: 0;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	background-color: #c6c6c6;
+	height: 8vh;
+}
+
+.star {
+	padding: 11px 0 0 5px;
+}
+
+.star img {
+	margin-top: -5px;
+    max-width: 20px;
+}
+
+.descrizione-dropdown {
+	padding: 14px 6px 0 0;
+	text-align: right;
+	margin-top: -5px;
+    max-width: 20px;
+}
+
+.keyword {
+	padding: 15px 10px 15px 10px;
+    font-size: .9em;
+    border-bottom: 1px #c6c6c6 solid;
+    color: #51ae32;
+}
+
+.keyword p {
+	border: 1px #c6c6c6 solid;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+	display: inline-block;
+}
+
+.descrizione-text {
+	padding: 15px;
+	font-size: .9em;
+	text-align: justify;
+}
+
+.informazione {
+	margin-top: -.5vh;
+	border: 2px #525463 solid;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    padding: 0;
+    font-size: .7em;
+    padding-bottom: 2vh;
+}
+
+.informazione-top {
+	padding: 0;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	background-color: #c6c6c6;
+	height: 8vh;
+}
+
+.info {
+	padding: 11px 0 0 5px;
+}
+
+.info img {
+	margin-top: -5px;
+    max-width: 20px;
+}
+
+.informazione-dropdown {
+	padding: 14px 6px 0 0;
+	text-align: right;
+	margin-top: -5px;
+    max-width: 20px;
+}
+
+.dati-generali {
+	font-size: .9em;
+}
+
+.dati-generali span {
+	color: #535364;
+}
+
+.d-title {
+	padding: 2vh 0 2vh 0;
+	border-bottom: 1px #c6c6c6 solid;
+}
+
+.d-topic {
+	padding: 1vh 0 0 0;
+	font-size: .9em;
+	color: #eb6619;
+	margin: 0;
+}
+
+.dati-viaggio {
+	font-size: .9em;
+}
+
+.dati-viaggio span {
+	color: #535364;
+}
+
+.altre-informazioni {
+	font-size: .9em;
+}
+
+.altre-informazioni span {
+	color: #535364;
+}
+
+.d-places {
+	padding: 1vh 0 0 0;
+	font-size: .9em;
+	border-bottom: 1px #c6c6c6 solid;
+}
+
+.plus {
+	padding: 3px 0 0 0;
+	max-width: 9px;
+}
+
+.plus-last {
+	float: left !important;
+}
+
+.aggiungi {
+	margin: 1vh 0 1vh 0;
+	padding: 0;
+	border: 1px #c6c6c6 solid;
+	border-radius: 5px;
+}
+
+.aggiungi span {
+	color: #51ae32;
+}
+
+.oggetti-text {
+	padding: 1vh 0 0 0;
+	font-size: .9em;
+	text-align: justify;
+}
+
+.gallery {
+	border: 2px #525463 solid;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    padding: 0;
+    font-size: .7em;
+}
+
+.gallery-top {
+	padding: 0;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	background-color: #c6c6c6;
+	height: 8vh;
+}
+
+.camera {
+	padding: 11px 0 0 5px;
+}
+
+.camera img {
+	margin-top: -5px;
+    max-width: 20px;
+}
+
+.gallery-dropdown {
+	padding: 14px 6px 0 0;
+	text-align: right;
+	margin-top: -5px;
+    max-width: 20px;
+}
+
+.gallery-title {
+	padding: 2vh 0 1vh 3vh;
+	color: #535364;
+}
+
+.gallery-title span {
+	color: #ec661c;
+}
+
+.photo {
+	padding: 1vh 2vh 1vh 2vh;
+}
+
+.load-more {
+	margin: 4vh 0 4vh 0;
+}
+
+.load-more span {
+	color: #FFFFFF;
+	background-color: #51ae32;
+	border-radius: 5px;
+	padding: 8px;
+}

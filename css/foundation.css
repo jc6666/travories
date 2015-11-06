@@ -3728,7 +3728,7 @@ a {
     border: none; }
 
 /* Default paragraph styles */
-p {
+/*p {
   font-family: inherit;
   font-size: 1rem;
   font-weight: normal;
@@ -3741,7 +3741,7 @@ p {
   p aside {
     font-size: 0.875rem;
     font-style: italic;
-    line-height: 1.35; }
+    line-height: 1.35; }*/
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
