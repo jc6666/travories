@@ -1404,7 +1404,7 @@ hr {
 }
 
 .d-title {
-	padding: 2vh 0 2vh 0;
+	padding: 4vh 0 2vh 0;
 	border-bottom: 1px #c6c6c6 solid;
 }
 
@@ -1459,13 +1459,15 @@ hr {
 }
 
 .aggiungi {
-	margin: 1vh 0 1vh 0;
 	padding: 0;
-	border: 1px #c6c6c6 solid;
-	border-radius: 5px;
+	margin: 3vh 0 1vh 0;
 }
 
 .aggiungi span {
+	padding:5px;
+	margin: 1vh 0 1vh 0;
+	border: 1px #c6c6c6 solid;
+	border-radius: 5px;
 	color: #51ae32;
 }
 
