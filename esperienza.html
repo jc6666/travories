@@ -26,7 +26,7 @@
     <script src="js/markerclusterer.js"></script>
   </head>
 
-  <body onload="initMap()">
+  <body>
 
 <!-- LOGO SMALL -->
 
@@ -96,30 +96,6 @@
 
     </div>
 
-<!-- SEARCH MEDIUM UP -->
-
-<div class="medium-12 columns show-for-medium-up search hidden-bar">
-      
-    <div class="medium-3 columns opzioni">
-      <p>OPZIONI DELLA MAPPA</p>
-    </div>
-    <div class="medium-3 columns hidden-menu">
-      <div class="medium-3 columns hidden-menu-button"><img src="img/paint.svg" alt=""></div>
-      <div class="medium-3 columns hidden-menu-button"><img src="img/add.svg" alt=""></div>
-      <div class="medium-3 columns hidden-menu-button"><img src="img/share.svg" alt=""></div>
-      <div class="medium-3 columns hidden-menu-button"><img src="img/print.svg" alt=""></div>
-    </div>
-
-
-    <form class="medium-4 columns">
-      <button type="submit" class="submit">
-        <i class="fa fa-search search-icon"></i>
-      </button>
-
-      <input type="text" placeholder="CERCA NEL MONDO..." class="text-center">
-    </form>
-</div>
-
 <!-- FLOATING MENU -->
 
   <div class="medium-12 columns show-for-medium-up">
@@ -158,13 +134,13 @@
 
       <div class="medium-4 columns side-page">
         <div class="small-12 columns side-page-title">
-              <a href="#">Amici</a>
+              <a href="#" data-reveal-id="amicimodal">Amici</a>
         </div>
       </div>
 
       <div class="medium-4 end columns side-page">
         <div class="small-12 columns side-page-title">
-              <a href="#">Ultimi Viaggi</a>
+              <a href="#" data-reveal-id="viaggimodal">Ultimi Viaggi</a>
         </div>
       </div>
 
@@ -187,214 +163,467 @@
   </div>
   <div class="small-12 medium-7 end columns posizione-address">Chiesa de Týn, Piazza de la Città Vecchia, Praga-Praga 1, Republica Ceca</div>
 </div>
+<!--                    PAGES SMALL                     -->
+
+<!-- ULTIMI VIAGGI DIV -->
+
+    <div class="small-10 small-offset-1 columns text-center page show-for-small-only">
+        <div class="small-8 columns page-title" align="left">
+          <a href="#">Ultimi Viaggi</a>
+        </div>
+        <div class="small-4 columns page-title" align="right">
+          <a href="#">></a>
+        </div>
+
+<!-- POST ULTIMI VIAGGI -->
+
+        <div class="small-12 columns viaggi text-center">
+          <div class="small-12 columns viaggi-foto">
+            <img src="http://placehold.it/240x140" alt="">
+          </div>
+          <div class="small-12 columns viaggi-info text-center">
+
+            <div class="small-2 columns toucan">
+            </div>
+
+            <div class="small-5 columns content">
+              <div class="small-12 columns guarda-viaggi" align="center">
+                <p>Guarda Viaggi</p>
+              </div>
+                    <div class="small-10 small-offset-1 columns hr2 text-center"></div>
+              <div class="small-12 columns text-center schedule">
+                <p class="user">22-10-2015&nbsp</p><p>/ 06:00</p>
+              </div>
+            </div>
+
+            <div class="small-4 offset columns viaggi-social text-center">
+                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                <a href="#"><i class="fa fa-twitter-square"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <div class="small-12 columns viaggi-location">
+            <div class="small-1 columns user-location"></div>
+            <div class="small-10 columns text-location">
+              <div class="small-4 columns pais" align="left"><p class="user">ESPAÑA</p></div>
+              <div class="small-8 columns ciudad" align="left">
+                <p>Alhambra, Calle Real de la Alhambra, Granada</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+<!-- AMICI DIV -->
+
+    <div class="small-10 small-offset-1 columns text-center page show-for-small-only">
+        <div class="small-8 columns page-title" alignt="left">
+          <a href="#">Amici</a>
+        </div>
+        <div class="small-4 columns page-title" align="right">
+          <a href="#">></a>
+        </div>
+
+<!-- POST AMICI -->
+
+  <div class="small-12 columns amici">
+
+    <div class="small-12 columns amici-profile show-for-portrait">
+      <div class="small-2 small-offset-1 columns amici-profile-pic"></div>
+      <div class="small-9 columns amici-username" align="left">
+        <p>Iron Man</p>
+      </div>
+    </div>
+
+    <div class="small-12 columns amici-profile show-for-landscape">
+      <div class="small-3 small-offset-2 columns amici-profile-pic"></div>
+      <div class="small-7 columns amici-username" align="left">
+        <p>Iron Man</p>
+      </div>
+    </div>
+
+    <div class="small-12 columns amici-foto">
+      <img src="http://placehold.it/240x140" alt="">
+    </div>
+
+   <div class="small-12 columns viaggi-info text-center">
+
+      <div class="small-2 columns toucan">
+      </div>
+
+      <div class="small-10 columns content">
+        <div class="small-12 columns guarda-profilo" align="center">
+        <p>Guarda Profilo</p>
+        </div>
+        <div class="small-10 small-offset-1 columns hr2 text-center"></div>
+        <div class="small-12 columns text-center schedule">
+        <p class="user">22-10-2015&nbsp</p><p>/ 19:16</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="small-12 columns viaggi-location">
+      <div class="small-1 columns user-location"></div>
+      <div class="small-10 columns text-location">
+        <div class="small-4 columns pais" align="left"><p class="user">ESPAÑA</p></div>
+        <div class="small-8 columns ciudad" align="left">
+          <p>Gran Via, Madrid</p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+<!--                    PAGES MEDIUM                    -->
+
+<!-- ULTIMI VIAGGI DIV -->
+
+    <div id="viaggimodal" class="reveal-modal medium-10 medium-offset-1 columns text-center page modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+        <div class="medium-11 columns page-title">
+          <a href="#">Ultimi Viaggi</a>
+        </div>
+        <div class="medium-1 columns page-title">
+          <a href="#">></a>
+        </div>
+
+<!-- POST ULTIMI VIAGGI MEDIUM -->
+
+        <div class="small-12 columns viaggi">
+          <div class="medium-6 columns viaggi-foto-m">
+            <img src="http://placehold.it/280x140" alt="">
+          </div>
+
+          <div class="medium-6 columns viaggi-info-m text-center">
+            <div class="medium-12 columns info-wrap">
+              <div class="medium-4 columns toucan">
+              </div>
+
+              <div class="medium-8 columns content-m">
+                <div class="medium-12 columns guarda-viaggi-m" align="center">
+                  <p>Guarda Viaggi</p>
+                </div>
+                    <div class="medium-10 medium-offset-1 columns hr2 text-center"></div>
+              <div class="medium-12 columns text-center schedule">
+                <p class="user">22-10-2015&nbsp</p><p>/ 06:00</p>
+              </div>
+            </div>
+            
+          <div class="medium-12 columns">
+            <div class="medium-8 medium-offset-2 columns viaggi-social-m text-center">
+                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                <a href="#"><i class="fa fa-twitter-square"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+          </div>
+          </div>
+
+        <div class="medium-10 medium-offset-1 end columns viaggi-location-m">
+          <div class="medium-1 columns user-location-m">
+          </div>
+
+          <div class="medium-11 columns text-location-m">
+              <div class="medium-2 columns pais" align="right"><p class="user">ESPAÑA</p></div>
+              <div class="medium-10 columns ciudad" align="left">
+                <p>&nbsp-&nbsp</p><p>Alhambra, Calle Real de la Alhambra, Granada</p>
+              </div>
+          </div>
+
+          </div>
+        </div>
+        
+        <div class="medium-12 columns more" align="right">
+          <a href="esperienza.html">Guarda tutte le mie esperienze ></a>
+        </div>
+
+
+
+        </div>
+      </div>
+
+<!-- AMICI MEDIUM -->
+
+<div id="amicimodal" class="reveal-modal medium-10 medium-offset-1 columns text-center page modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+
+    <div class="medium-11 columns page-title">
+    <a href="#">Amici</a>
+    </div>
+
+    <div class="medium-1 columns page-title">
+    <a href="#">></a>
+    </div>
+
+<!-- POST AMICI MEDIUM -->
+
+    <div class="medium-12 columns amici">
+
+        <div class="medium-12 columns amici-m-wrapper">
+            <div class="medium-6 columns amici-profile">
+                <div class="medium-2 medium-offset-1 columns amici-profile-pic"></div>
+                <div class="medium-9 columns amici-username" align="left">
+                  <p>Iron Man</p>
+                </div>
+            </div>
+
+            <div class="medium-6 columns viaggi-info-m text-center">
+                <div class="medium-12 columns info-wrap">
+                    <div class="medium-4 columns toucan"></div>
+                    <div class="medium-8 columns content-m">
+                      <div class="medium-12 columns guarda-viaggi-m" align="center">
+                        <p>Guarda Viaggi</p>
+                      </div>
+                    <div class="medium-10 medium-offset-1 columns hr2 text-center"></div>
+                    <div class="medium-12 columns text-center schedule">
+                        <p class="user">22-10-2015&nbsp</p><p>/ 06:00</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="medium-10 medium-offset-1 end viaggi-location-m">
+              <div class="medium-1 columns user-location-m"></div>
+              <div class="medium-11 columns text-location-m">
+                  <div class="medium-2 columns pais" align="right">
+                    <p class="user">ESPAÑA</p>
+                  </div>
+                  <div class="medium-10 columns ciudad" align="left">
+                    <p>&nbsp-&nbsp</p><p>Gran Via, Madrid</p>
+                  </div>
+              </div>
+        </div>
+        
+        <div class="medium-12 columns">
+          <div class="medium-10 medium-offset-1 columns reel">
+            <i class="fa fa-camera camera-icon"></i>
+            <img src="http://placehold.it/40x40" alt="">
+            <img src="http://placehold.it/40x40" alt="">
+            <img src="http://placehold.it/40x40" alt="">
+            <img src="http://placehold.it/40x40" alt="">
+            <img src="http://placehold.it/40x40" alt="">
+            <img src="http://placehold.it/40x40" alt="">
+          </div>
+        </div>
+        </div>
+        </div>
+        <div class="medium-12 columns more" align="right">
+          <a href="#">Guarda i miei amici ></a>
+        </div>
+    </div>
+
 
 <!-- ************** EZPERIENCIA ************** -->
 
-<!-- TORNA -->
+  <!-- TORNA -->
 
-  <div class="small-12 columns torna">
-    <img src="img/back.svg" alt="">Torna alla mappa
-  </div>
-
-<!-- ESPERIENZA -->
-
-  <div class="small-10 small-offset-1 columns esperienza">
-
-<!-- TITLE -->
-
-    <div class="small-12 columns esperienza-title">
-      <div class="small-8 medium-10 large-11 columns">
-        Viaggio a Praga con amici
-      </div>
-      <div class="small-3 medium-2 large-1 columns edit">
-        <img src="img/edit.svg" alt="">
-      </div>
+    <div class="small-12 columns torna">
+      <a href="index.html"><img src="img/back.svg" alt="">Torna alla mappa</a>
     </div>
 
-    <div class="small-12 columns dates">
-      <div class="small-12 medium-4 columns trip-date">Dal: <p class="date-orange">11-03-2015</p>&nbsp/&nbspAl:&nbsp<p class="date-orange">04-03-2015</p></div>
-      <div class="small-12 medium-8 columns publish-date">Data di pubblicazione: 11-05-2015 / 11:00 </div>
-    </div>
+  <!-- ESPERIENZA -->
 
-<!-- DESCRIZIONE -->
+    <div class="small-10 small-offset-1 columns esperienza">
 
-    <div class="small-12 columns descrizione">
-      <div class="small-12 columns descrizione-top">
-        <div class="small-8 columns star"><img src="img/star.svg" alt="">&nbspDescrizione</div>
-        <div class="small-4 columns descrizione-dropdown"><img src="img/arrow-down.svg" alt=""></div>
-      </div>
-      <div class="small-12 columns keyword"><p>keywooord</p><p>keyword</p><p>keyword keyword</p><p>keeeeywooord</p><p>keywoooooooord</p></div>
-      <div class="small-12 columns descrizione-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magni, beatae. Corrupti vero similique sed labore minima fugit distinctio impedit veritatis deserunt architecto quo voluptatem nulla, dicta, maxime et nihil.</div>
-    </div>
+  <!-- TITLE -->
 
-<!-- INFORMAZIONE -->
-
-    <div class="small-12 columns informazione">
-      <div class="small-12 columns informazione-top">
-        <div class="small-8 columns info"><img src="img/info.svg" alt="">&nbspInformazione</div>
-        <div class="small 4 columns informazione-dropdown"><img src="img/arrow-down.svg" alt=""></div>
-      </div>
-        
-<!-- DATI GENERALI -->
-
-      <div class="small-12 columns dati-generali">
-        <div class="small-12 columns d-title">DATI GENERALI</div>
-          <div class="small-12 medium-4 columns d-topic">PAESE<span> : Republica Ceca</span></div>
-          <div class="small-12 medium-4 columns d-topic">LINGUA PARLATA<span> : Checo</span></div>
-          <div class="small-12 medium-4 columns d-topic">FUSO HORARIO<span>: UTC/GMT +1 hora</span></div>
-          <div class="small-12 columns d-topic">RELIGIONE<span> : Atei 62,2% . Cattolici 34%. Protestanti 2%. Husitas checos 1%. Ebrei 0,8%.</span></div>
-          <div class="small-12 columns d-topic">MONETA<span> : Corona Checa (CZK)</span></div>
-          <div class="small-12 columns d-topic">VACCINI<span> : Nessuno</span></div>
+      <div class="small-12 columns esperienza-title">
+        <div class="small-8 medium-10 large-11 columns">
+          Viaggio a Praga con amici
+        </div>
+        <div class="small-3 medium-2 large-1 columns edit">
+          <img src="img/edit.svg" alt="">
+        </div>
       </div>
 
-<!-- DATI VIAGGIO -->
-
-      <div class="small-12 columns dati-viaggio">
-        <div class="small-12 columns d-title">DATI DEL VIAGGIO</div>
-          <div class="small-12 medium-4 columns d-topic">PERIODO<span> : Estate</span></div>
-          <div class="small-12 medium-8 columns d-topic">STAGIONE IN LOCO<span> : Estate</span></div>
-          <div class="small-12 medium-4 columns d-topic">TIPO DI VIAGGIO<span>: Turismo</span></div>
-          <div class="small-12 medium-8 columns d-topic">CON CHI<span> : Con amici</span></div>
+      <div class="small-12 columns dates">
+        <div class="small-12 medium-4 columns trip-date">Dal: <p class="date-orange">11-03-2015</p>&nbsp/&nbspAl:&nbsp<p class="date-orange">04-03-2015</p></div>
+        <div class="small-12 medium-8 columns publish-date">Data di pubblicazione: 11-05-2015 / 11:00 </div>
       </div>
 
-<!-- ALTRE INFORMAZIONI -->
+  <!-- DESCRIZIONE -->
 
-      <div class="small-12 columns altre-informazioni">
-        <div class="small-12 columns d-title">ALTRE INFORMAZIONI</div>
+      <div class="small-12 columns descrizione">
+        <div class="small-12 columns descrizione-top">
+          <div class="small-8 columns star"><img src="img/star.svg" alt="">&nbspDescrizione</div>
+          <div class="small-4 columns descrizione-dropdown"><img src="img/arrow-down.svg" alt=""></div>
+        </div>
+        <div class="small-12 columns keyword"><p>keywooord</p><p>keyword</p><p>keyword keyword</p><p>keeeeywooord</p><p>keywoooooooord</p></div>
+        <div class="small-12 columns descrizione-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magni, beatae. Corrupti vero similique sed labore minima fugit distinctio impedit veritatis deserunt architecto quo voluptatem nulla, dicta, maxime et nihil.</div>
+      </div>
 
-          <!-- POSTI VISITATI -->
+  <!-- INFORMAZIONE -->
 
-          <div class="small-12 columns d-topic">POSTI VISITATI<span>:</span></div>
-              <div class="small-11 columns d-places"><span>Chiesa de Tyn</span></div>
-              <div class="small-1 columns plus">
-                <img src="img/plus.svg" alt="">
-              </div>
-              <div class="small-11 columns d-places"><span>Reloj Astronómico</span></div>
-              <div class="small-1 columns plus">
-                <img src="img/plus.svg" alt="">
-              </div>
-              <div class="small-11 columns d-places"><span>Plaza de la Ciudad Vieja</span></div>
-              <div class="small-1 columns plus">
-                <img src="img/plus.svg" alt="">
-              </div>
-              <div class="small-11 columns d-places"><span>Puente de Carlos</span></div>
-              <div class="small-1 columns plus">
-                <img src="img/plus.svg" alt="">
-              </div>
-              <div class="small-11 columns d-places"><span>Torre de Polvora</span></div>
-              <div class="small-1 columns plus">
-                <img src="img/plus.svg" alt="">
-              </div>
-              <div class="small-11 columns d-places"><span>Clementinum</span></div>
-              <div class="small-1 columns plus">
-                <img src="img/plus.svg" alt="">
-              </div>
-              <div class="small-3 small-offset-9 medium-2 medium-offset-10 large-1 large-offset-11  columns aggiungi text-center"><span>Aggiungi</span></div>
-              <div></div>
+      <div class="small-12 columns informazione">
+        <div class="small-12 columns informazione-top">
+          <div class="small-8 columns info"><img src="img/info.svg" alt="">&nbspInformazione</div>
+          <div class="small 4 columns informazione-dropdown"><img src="img/arrow-down.svg" alt=""></div>
+        </div>
+          
+  <!-- DATI GENERALI -->
 
-            <!-- PIATTI TIPICI -->
+        <div class="small-12 columns dati-generali">
+          <div class="small-12 columns d-title">DATI GENERALI</div>
+            <div class="small-12 medium-4 columns d-topic">PAESE<span> : Republica Ceca</span></div>
+            <div class="small-12 medium-4 columns d-topic">LINGUA PARLATA<span> : Checo</span></div>
+            <div class="small-12 medium-4 columns d-topic">FUSO HORARIO<span>: UTC/GMT +1 hora</span></div>
+            <div class="small-12 columns d-topic">RELIGIONE<span> : Atei 62,2% . Cattolici 34%. Protestanti 2%. Husitas checos 1%. Ebrei 0,8%.</span></div>
+            <div class="small-12 columns d-topic">MONETA<span> : Corona Checa (CZK)</span></div>
+            <div class="small-12 columns d-topic">VACCINI<span> : Nessuno</span></div>
+        </div>
 
-            <div class="small-12 columns d-topic">PIATTI TIPICI<span>:</span></div>
-              <div class="small-11 columns d-places"><span>Kulajada</span></div>
-              <div class="small-1 columns plus">
-                <img src="img/plus.svg" alt="">
-              </div>
-              <div class="small-11 columns d-places"><span>Bramborak</span></div>
-              <div class="small-1 columns plus">
-                <img src="img/plus.svg" alt="">
-              </div>
-              <div class="small-11 columns d-places"><span>Knedliky</span></div>
-              <div class="small-1 columns plus">
-                <img src="img/plus.svg" alt="">
-              </div>
-              <div class="small-11 columns d-places"><span>Chebicky</span></div>
-              <div class="small-1 columns plus">
-                <img src="img/plus.svg" alt="">
-              </div>
-              <div class="small-11 columns d-places"><span>Utopenec</span></div>
-              <div class="small-1 columns plus">
-                <img src="img/plus.svg" alt="">
-              </div>
-              <div class="small-11 columns d-places"><span>Šopský salát</span></div>
-              <div class="small-1 columns plus">
-                <img src="img/plus.svg" alt="">
-              </div>
-              <div class="small-3 small-offset-9 medium-2 medium-offset-10 large-1 large-offset-11  columns aggiungi text-center"><span>Aggiungi</span></div>
-              <div></div>
+  <!-- DATI VIAGGIO -->
 
-              <!-- FAUNA DELLA ZONA -->
+        <div class="small-12 columns dati-viaggio">
+          <div class="small-12 columns d-title">DATI DEL VIAGGIO</div>
+            <div class="small-12 medium-4 columns d-topic">PERIODO<span> : Estate</span></div>
+            <div class="small-12 medium-8 columns d-topic">STAGIONE IN LOCO<span> : Estate</span></div>
+            <div class="small-12 medium-4 columns d-topic">TIPO DI VIAGGIO<span>: Turismo</span></div>
+            <div class="small-12 medium-8 columns d-topic">CON CHI<span> : Con amici</span></div>
+        </div>
 
-              <div class="small-12 columns d-topic">FAUNA DELLA ZONA<span>:</span></div>
-                <div class="small-11 columns d-places"><span>Picchoni</span></div>
+  <!-- ALTRE INFORMAZIONI -->
+
+        <div class="small-12 columns altre-informazioni">
+          <div class="small-12 columns d-title">ALTRE INFORMAZIONI</div>
+
+            <!-- POSTI VISITATI -->
+
+            <div class="small-12 columns d-topic">POSTI VISITATI<span>:</span></div>
+                <div class="small-11 columns d-places"><span>Chiesa de Tyn</span></div>
                 <div class="small-1 columns plus">
                   <img src="img/plus.svg" alt="">
                 </div>
-                <div class="small-11 columns d-places"><span>Scarafaggi</span></div>
+                <div class="small-11 columns d-places"><span>Reloj Astronómico</span></div>
+                <div class="small-1 columns plus">
+                  <img src="img/plus.svg" alt="">
+                </div>
+                <div class="small-11 columns d-places"><span>Plaza de la Ciudad Vieja</span></div>
+                <div class="small-1 columns plus">
+                  <img src="img/plus.svg" alt="">
+                </div>
+                <div class="small-11 columns d-places"><span>Puente de Carlos</span></div>
+                <div class="small-1 columns plus">
+                  <img src="img/plus.svg" alt="">
+                </div>
+                <div class="small-11 columns d-places"><span>Torre de Polvora</span></div>
+                <div class="small-1 columns plus">
+                  <img src="img/plus.svg" alt="">
+                </div>
+                <div class="small-11 columns d-places"><span>Clementinum</span></div>
                 <div class="small-1 columns plus">
                   <img src="img/plus.svg" alt="">
                 </div>
                 <div class="small-3 small-offset-9 medium-2 medium-offset-10 large-1 large-offset-11  columns aggiungi text-center"><span>Aggiungi</span></div>
                 <div></div>
 
-              <!-- OGGETTI UTILITI -->
+              <!-- PIATTI TIPICI -->
 
-              <div class="small-12 columns d-topic">OGGETTI UTILITI<span>:</span></div>
-                <div class="small-11 columns d-places"><span>Dizionario</span></div>
+              <div class="small-12 columns d-topic">PIATTI TIPICI<span>:</span></div>
+                <div class="small-11 columns d-places"><span>Kulajada</span></div>
                 <div class="small-1 columns plus">
                   <img src="img/plus.svg" alt="">
                 </div>
-                <div class="small-11 columns d-places"><span>Condons</span></div>
+                <div class="small-11 columns d-places"><span>Bramborak</span></div>
+                <div class="small-1 columns plus">
+                  <img src="img/plus.svg" alt="">
+                </div>
+                <div class="small-11 columns d-places"><span>Knedliky</span></div>
+                <div class="small-1 columns plus">
+                  <img src="img/plus.svg" alt="">
+                </div>
+                <div class="small-11 columns d-places"><span>Chebicky</span></div>
+                <div class="small-1 columns plus">
+                  <img src="img/plus.svg" alt="">
+                </div>
+                <div class="small-11 columns d-places"><span>Utopenec</span></div>
+                <div class="small-1 columns plus">
+                  <img src="img/plus.svg" alt="">
+                </div>
+                <div class="small-11 columns d-places"><span>Šopský salát</span></div>
                 <div class="small-1 columns plus">
                   <img src="img/plus.svg" alt="">
                 </div>
                 <div class="small-3 small-offset-9 medium-2 medium-offset-10 large-1 large-offset-11  columns aggiungi text-center"><span>Aggiungi</span></div>
                 <div></div>
 
-              <!-- DA CONSIGLIARE -->
+                <!-- FAUNA DELLA ZONA -->
 
-              <div class="small-12 columns d-topic">DA CONSIGLIARE<span>:</span></div>
-                <div class="small-12 columns oggetti-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis expedita magni vero voluptate, cumque in perspiciatis, nobis alias accusantium possimus deserunt provident magnam, quisquam culpa?</div>
-        </div>
-    
-    </div>
+                <div class="small-12 columns d-topic">FAUNA DELLA ZONA<span>:</span></div>
+                  <div class="small-11 columns d-places"><span>Picchoni</span></div>
+                  <div class="small-1 columns plus">
+                    <img src="img/plus.svg" alt="">
+                  </div>
+                  <div class="small-11 columns d-places"><span>Scarafaggi</span></div>
+                  <div class="small-1 columns plus">
+                    <img src="img/plus.svg" alt="">
+                  </div>
+                  <div class="small-3 small-offset-9 medium-2 medium-offset-10 large-1 large-offset-11  columns aggiungi text-center"><span>Aggiungi</span></div>
+                  <div></div>
 
-<!-- GALLERY -->
+                <!-- OGGETTI UTILITI -->
 
-    <div class="small-12 columns gallery">
-      <div class="small-12 columns gallery-top">
-        <div class="small-8 columns camera"><img src="img/camera.svg" alt="">&nbspGallery</div>
-        <div class="small-4 columns gallery-dropdown"><img src="img/arrow-down.svg" alt=""></div>
+                <div class="small-12 columns d-topic">OGGETTI UTILITI<span>:</span></div>
+                  <div class="small-11 columns d-places"><span>Dizionario</span></div>
+                  <div class="small-1 columns plus">
+                    <img src="img/plus.svg" alt="">
+                  </div>
+                  <div class="small-11 columns d-places"><span>Condons</span></div>
+                  <div class="small-1 columns plus">
+                    <img src="img/plus.svg" alt="">
+                  </div>
+                  <div class="small-3 small-offset-9 medium-2 medium-offset-10 large-1 large-offset-11  columns aggiungi text-center"><span>Aggiungi</span></div>
+                  <div></div>
+
+                <!-- DA CONSIGLIARE -->
+
+                <div class="small-12 columns d-topic">DA CONSIGLIARE<span>:</span></div>
+                  <div class="small-12 columns oggetti-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis expedita magni vero voluptate, cumque in perspiciatis, nobis alias accusantium possimus deserunt provident magnam, quisquam culpa?</div>
+          </div>
+      
       </div>
 
-      <div class="small-12 columns gallery-title">
-        <span>67</span>&nbsp-&nbspFotografie Del Viaggio
-      </div>
-        <div class="small-12 columns text-center gallery-wrap">
-          <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
-          <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
-          <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
-          <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
-          <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
-          <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
-          <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
-          <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
+  <!-- GALLERY -->
+
+      <div class="small-12 columns gallery">
+        <div class="small-12 columns gallery-top">
+          <div class="small-8 columns camera"><img src="img/camera.svg" alt="">&nbspGallery</div>
+          <div class="small-4 columns gallery-dropdown"><img src="img/arrow-down.svg" alt=""></div>
         </div>
-      <div class="small-3 small-offset-9 medium-2 medium-offset-10 large-1 large-offset-10  columns aggiungi text-center"><span>Aggiungi</span></div>
-      <div class="small-12 columns text-center load-more"><span>CARCA PIÙ IMMAGINI</span></div>
-      <div></div>
+
+        <div class="small-12 columns gallery-title">
+          <span>67</span>&nbsp-&nbspFotografie Del Viaggio
+        </div>
+          <div class="small-12 columns text-center gallery-wrap">
+            <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
+            <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
+            <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
+            <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
+            <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
+            <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
+            <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
+            <div class="small-12 medium-3 columns photo"><img src="http://placehold.it/300x300" alt=""></div>
+          </div>
+        <div class="small-3 small-offset-9 medium-2 medium-offset-10 large-1 large-offset-10  columns aggiungi text-center"><span>Aggiungi</span></div>
+        <div class="small-12 columns text-center load-more"><span>CARCA PIÙ IMMAGINI</span></div>
+        <div></div>
 
 
 
+      </div>
+
+
+
+
+      
+  <div></div>
     </div>
 
-
-
-
     
-<div></div>
-  </div>
-
-  
 
 <!-- SOCIAL NETWORKS FOOTER -->    
 

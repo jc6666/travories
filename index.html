@@ -30,9 +30,9 @@
 
 <!-- LOGO SMALL -->
 
-    <div class="small-8 small-offset-2 columns row logo text-center show-for-small-only">
+      <div class="small-8 small-offset-2 columns row logo text-center show-for-small-only">
 
-    </div>
+      </div>
 
 <!-- TOP MENU -->
 
@@ -104,10 +104,10 @@
       <p>OPZIONI DELLA MAPPA</p>
     </div>
     <div class="medium-3 columns hidden-menu">
-      <div class="medium-3 columns hidden-menu-button"><img src="img/paint.svg" alt=""></div>
-      <div class="medium-3 columns hidden-menu-button"><img src="img/add.svg" alt=""></div>
-      <div class="medium-3 columns hidden-menu-button"><img src="img/share.svg" alt=""></div>
-      <div class="medium-3 columns hidden-menu-button"><img src="img/print.svg" alt=""></div>
+      <div class="medium-3 columns hidden-menu-button"><a href="#"><img src="img/paint.svg" alt=""></div></a>
+      <div class="medium-3 columns hidden-menu-button"><a href="esperienza.html"><img src="img/add.svg" alt=""></div></a>
+      <div class="medium-3 columns hidden-menu-button"><a href="#"><img src="img/share.svg" alt=""></div></a>
+      <div class="medium-3 columns hidden-menu-button"><a href="#"><img src="img/print.svg" alt=""></div></a>
     </div>
 
 
@@ -158,13 +158,13 @@
 
       <div class="medium-4 columns side-page">
         <div class="small-12 columns side-page-title">
-              <a href="#">Amici</a>
+              <a href="#" data-reveal-id="amicimodal">Amici</a>
         </div>
       </div>
 
       <div class="medium-4 end columns side-page">
         <div class="small-12 columns side-page-title">
-              <a href="#">Ultimi Viaggi</a>
+              <a href="#" data-reveal-id="viaggimodal">Ultimi Viaggi</a>
         </div>
       </div>
 
@@ -320,7 +320,7 @@
 
 <!-- ULTIMI VIAGGI DIV -->
 
-    <div class="medium-10 medium-offset-1 columns text-center page show-for-medium-only">
+    <div id="viaggimodal" class="reveal-modal medium-10 medium-offset-1 columns text-center page modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
         <div class="medium-11 columns page-title">
           <a href="#">Ultimi Viaggi</a>
         </div>
@@ -376,16 +376,17 @@
         </div>
         
         <div class="medium-12 columns more" align="right">
-          <a href="#">Guarda tutte le mie esperienze ></a>
+          <a href="esperienza.html">Guarda tutte le mie esperienze ></a>
         </div>
 
 
 
         </div>
+      </div>
 
 <!-- AMICI MEDIUM -->
 
-  <div class="medium-10 medium-offset-1 columns text-center page show-for-medium-only">
+<div id="amicimodal" class="reveal-modal medium-10 medium-offset-1 columns text-center page modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
 
     <div class="medium-11 columns page-title">
     <a href="#">Amici</a>
